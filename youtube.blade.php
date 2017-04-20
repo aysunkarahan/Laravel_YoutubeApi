@@ -24,5 +24,14 @@
                      @endforeach
 
             @endif
+            <div class="">
+                @if(isset($prev))
+                    <a class="" href="{{url("/video/youtube/".$prev)}}">EN YENİ VİDEOLAR</a>
+                @endif
+             </div>
+             <div class="">
+             <a class="" href="{{url("/video/youtube/".$next)}}">DAHA ESKİ VİDEOLAR</a>
+            </div>
+
 
 @endsection
