@@ -6,7 +6,7 @@
                     <div class=""><h1 class="">Youtube sitesine yüklenen videolar</h1></div>
                     @foreach($data as $data_list)
                     <div class="">                            
-                       <div class="" style="background: url({{$lid->snippet->thumbnails->high->url}}) no-repeat center center/100%;"></div>
+                      <div class="" style="background: url({{$data_list->snippet->thumbnails->high->url}}) no-repeat center center/100%;"></div>
                             <div class="">
                                 <a href= "{{url('/video/')}}{{'/in/'}}{{$data_list->id->videoId}}"> 
 				<h3 class="">
