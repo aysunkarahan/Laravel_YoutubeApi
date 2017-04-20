@@ -11,8 +11,8 @@ class videoController extends Controller {
 		$url = "https://www.googleapis.com/youtube/v3/search?pageToken=".$pageToken."&key=yourYoutubeApiKey
 		&channelId=(You seek which channel)&part=snippet,id&order=date&maxResults=10";
 		$data = array();
-		$jurl = file_get_contents($yrl,0,null,null);
-		$json_result = json_decode($y);
+		$jurl = file_get_contents($url,0,null,null);
+		$json_result = json_decode($jurl);
 		$data= $json_result->items;
 		$next = $json_result->nextPageToken;
 
