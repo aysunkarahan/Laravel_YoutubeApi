@@ -8,7 +8,7 @@ class videoController extends Controller {
 	
 
 	public function Liste($pageToken){
-		$url = "https://www.googleapis.com/youtube/v3/search?pageToken=".$pageToken."&key=AIzaSyA3cCIlR0tUnG2FgEHNnN5H6LZNE2fnLpg&channelId=UCSRHQPUYfDLagYzjDuD6xDA&part=snippet,id&order=date&maxResults=10";
+		$url = "https://www.googleapis.com/youtube/v3/search?pageToken=".$pageToken."&key=yourYoutubeApiKey&channelId=UCSRHQPUYfDLagYzjDuD6xDA&part=snippet,id&order=date&maxResults=10";
 		$data = array();
 		$jurl = file_get_contents($yrl,0,null,null);
 		$json_result = json_decode($y);
